@@ -1,10 +1,14 @@
 $colors:(
     bg:#fafbfb,
-    work:#1cad89
+    work:#1cad89,
+    primary:#1cad89
 );
 
 $desktop: 840px;
 
+@function color($color-val){
+    @return map-get($colors , $color-val );
+}
 @mixin desktop {
     @media (min-width: #{$desktop}) {
         @content;
