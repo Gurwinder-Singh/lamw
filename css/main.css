@@ -1,18 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond|Indie+Flower|Montserrat");
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700);
-@import url(http://fonts.googleapis.com/css?family=Dosis:300,400,700);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700");
+@import url("https://fonts.googleapis.com/css?family=Dosis:300, 400, 700");
 * {
   margin: 0;
   padding: 0;
 }
 
-body, html {
+body,
+html {
   height: 100%;
+  width: 100%;
 }
 
 body {
-  background: #ecf0f1;
-  font-family: 'Montserrat', sans-serif;
+  background: #fafbfb;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
 }
 
@@ -38,8 +40,8 @@ body {
 }
 
 #showcase .content {
-  -webkit-animation: showcase 1s forwards 0s ease;
-          animation: showcase 1s forwards 0s ease;
+  -webkit-animation: showcase 3s forwards 0s ease;
+          animation: showcase 3s forwards 0s ease;
   background: rgba(0, 0, 0, 0.2);
   padding: 1em 1em;
   border-radius: 1em;
@@ -47,7 +49,7 @@ body {
 
 #showcase h1 {
   color: white;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: 0.3em;
@@ -97,7 +99,126 @@ body {
   content: "-- ";
 }
 
+#main {
+  width: 100%;
+  height: 40vh;
+}
+
+#main .title {
+  text-align: center;
+  margin: 2em auto;
+}
+
+#main .work-in-icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[5];
+      grid-template-columns: repeat(5, auto);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 50px;
+}
+
+#main .work-in-icons .fab,
+#main .work-in-icons .fas {
+  font-size: 5em;
+  color: #1cad89;
+}
+
+#main .card {
+  text-align: center;
+}
+
+#work {
+  background-color: #1cad89;
+  width: 100%;
+  height: 60%;
+  position: relative;
+  padding: 100px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#work .content {
+  color: white;
+  font-size: 3em;
+}
+
+#work .show-work img {
+  width: 200px;
+  height: 30%;
+  -webkit-box-shadow: 2px 2px 2px 2px;
+          box-shadow: 2px 2px 2px 2px;
+}
+
+#cover {
+  width: 100%;
+  background: linear-gradient(-45deg, #fbd863 -45%, #ff5acd 100%);
+  height: 90%;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#cover .content {
+  color: white;
+  font-size: 3em;
+}
+
+#cover img {
+  width: 100%;
+  height: 200%;
+  -webkit-box-shadow: 2px 2px 2px 2px;
+          box-shadow: 2px 2px 2px 2px;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  padding: 4px;
+  margin: 2px auto;
+  border: 3px solid white;
+}
+
+.btn-small {
+  font-size: 1.5rem;
+}
+
 .container {
   text-align: center;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+footer {
+  padding: 100px;
+  text-align: center;
+  position: relative;
+  bottom: 0%;
+}
+
+.clearfix {
+  display: table;
 }
 /*# sourceMappingURL=main.css.map */
