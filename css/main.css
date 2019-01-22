@@ -13,6 +13,7 @@ body {
   background: #202124;
   font-family: "Montserrat", sans-serif;
   margin: 0;
+  color: white;
 }
 
 #showcase {
@@ -274,7 +275,6 @@ body {
 #main .work-in-icons .fab,
 #main .work-in-icons .fas {
   font-size: 2em;
-  color: #1cad89;
 }
 
 @media (min-width: 840px) {
@@ -297,11 +297,10 @@ body {
 }
 
 #work {
-  background: linear-gradient(-45deg, #158166 -45%, #1cad89 100%);
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0) -45%, transparent 100%);
   width: 100%;
   height: 60%;
   position: relative;
-  padding: 100px 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto;
@@ -333,10 +332,14 @@ body {
 }
 
 #work .show-work img {
-  width: 200px;
+  width: 50%;
   height: 30%;
-  -webkit-box-shadow: 2px 2px 2px 2px;
-          box-shadow: 2px 2px 2px 2px;
+  margin-left: 20%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-shadow: 2px 2px 2px 2px black;
+          box-shadow: 2px 2px 2px 2px black;
 }
 
 #cover {
@@ -369,7 +372,6 @@ body {
 }
 
 #cover .content {
-  color: black;
   display: block;
   font-size: 1.5em;
   width: 80%;
@@ -389,8 +391,8 @@ body {
 #cover img {
   width: 100%;
   height: 200%;
-  -webkit-box-shadow: 2px 2px 2px 2px;
-          box-shadow: 2px 2px 2px 2px;
+  -webkit-box-shadow: 2px 2px 2px 2px black;
+          box-shadow: 2px 2px 2px 2px black;
 }
 
 .btn {
@@ -478,7 +480,7 @@ body {
 }
 
 .latest #other .card .middle .text {
-  background-color: #1cad89;
+  background-color: transparent;
   color: white;
   font-size: 16px;
   padding: 16px 32px;
@@ -489,7 +491,7 @@ body {
 }
 
 #about {
-  background: #1cad89;
+  background: transparent;
   height: 80%;
   width: 100%;
   padding: 50px 0;
@@ -529,7 +531,7 @@ footer {
   position: relative;
   bottom: 0%;
   color: #717e83;
-  background-color: #0e1e25;
+  background-color: #000;
 }
 
 footer .fab {
