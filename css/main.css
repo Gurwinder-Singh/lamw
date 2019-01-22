@@ -332,14 +332,10 @@ body {
 }
 
 #work .show-work img {
-  width: 50%;
-  height: 30%;
-  margin-left: 20%;
+  width: 100%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-box-shadow: 2px 2px 2px 2px black;
-          box-shadow: 2px 2px 2px 2px black;
 }
 
 #cover {
@@ -391,8 +387,6 @@ body {
 #cover img {
   width: 100%;
   height: 200%;
-  -webkit-box-shadow: 2px 2px 2px 2px black;
-          box-shadow: 2px 2px 2px 2px black;
 }
 
 .btn {
