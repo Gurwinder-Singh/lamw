@@ -415,6 +415,7 @@ body {
   color: white;
   h1{
     font-size: 3em;
+    margin-bottom: 1em;
   }
   span{
     font-size: 2em;
@@ -424,7 +425,7 @@ body {
     margin-top:4em;
 
     @include desktop {
-      margin-top:6em;
+      margin-top:4em;
     }
   }
   
