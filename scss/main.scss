@@ -17,7 +17,7 @@ body {
   background: color(bg);
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  color: white;
+  color: color(text-color);
 }
 
 #showcase {
@@ -32,6 +32,11 @@ body {
   background-attachment: fixed;
   background-position: center;
  
+  .navBlack{
+    background-color: rgba(32,33,36,0.8);
+
+  }
+
   nav {
     position: fixed;
     width: 100%;
@@ -253,7 +258,7 @@ body {
     grid-template-columns: 1fr 1fr;
   }
   .content {
-    color: white;
+    color: color(text-color);
     font-size: 1.5em;
     @include desktop {
       font-size: 2em;
@@ -401,7 +406,7 @@ body {
 
   .content {
     text-align: center;
-    color: white;
+    color: color(text-color);;
     font-size: 1.5em;
   }
 }

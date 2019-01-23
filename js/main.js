@@ -37,6 +37,26 @@ function toggleMenu(x) {
     menu[0].classList.toggle("menu_visible");
     // menu[0].style.display = menu[0].style.display == "block" ? "none":"block";
 }
+// Get the navbar
+var main = document.getElementById("main");
+var navbar = document.getElementById("navbar");
+var headerEnd = undefined;
+if(main){
+    headerEnd =  main.offsetTop;
+}
+
+window.onscroll = function() {
+    navBarAction();
+  
+};
+
+function navBarAction() {
+    if (window.pageYOffset + navbar.offsetHeight >= headerEnd) {
+      navbar.classList.add("navBlack")
+    } else {
+       navbar.classList.remove("navBlack");
+    }
+  }
 
 // sr.reveal('.showcase-btn', {
 //     duration:2000,

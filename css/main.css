@@ -10,10 +10,10 @@ html {
 }
 
 body {
-  background: #202124;
+  background: #f1f1fa;
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  color: white;
+  color: #444;
 }
 
 #showcase {
@@ -24,6 +24,10 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+}
+
+#showcase .navBlack {
+  background-color: rgba(32, 33, 36, 0.8);
 }
 
 #showcase nav {
@@ -320,7 +324,7 @@ body {
 }
 
 #work .content {
-  color: white;
+  color: #444;
   font-size: 1.5em;
 }
 
@@ -498,7 +502,7 @@ body {
 
 #about .content {
   text-align: center;
-  color: white;
+  color: #444;
   font-size: 1.5em;
 }
 
