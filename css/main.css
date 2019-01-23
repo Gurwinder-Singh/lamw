@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond|Indie+Flower|Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700");
+@import url("https://fonts.googleapis.com/css?family=Dosis:300, 400, 700");
 * {
   margin: 0;
   padding: 0;
@@ -188,7 +191,7 @@ body {
   padding: 0 20px;
 }
 
-#showcase .showdata .content {
+#showcase .showdata .tagline {
   -webkit-animation: showcase 3s forwards 0s ease;
           animation: showcase 3s forwards 0s ease;
   background: rgba(0, 0, 0, 0.2);
@@ -323,23 +326,33 @@ body {
   }
 }
 
-#work .content {
-  color: #444;
-  font-size: 1.5em;
-}
-
-@media (min-width: 840px) {
-  #work .content {
-    font-size: 2em;
-    width: 80%;
-  }
-}
-
 #work .show-work img {
   width: 100%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.content {
+  display: block;
+  font-size: 1.5em;
+  width: 80%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-align: center;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+.content span {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 840px) {
+  .content {
+    font-size: 2em;
+  }
 }
 
 #cover {
@@ -371,37 +384,9 @@ body {
   }
 }
 
-#cover .content {
-  display: block;
-  font-size: 1.5em;
-  width: 80%;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
-}
-
-@media (min-width: 840px) {
-  #cover .content {
-    font-size: 2em;
-  }
-}
-
 #cover img {
   width: 100%;
   height: 200%;
-}
-
-.btn {
-  text-decoration: none;
-  color: inherit;
-  padding: 4px;
-  margin: 2px auto;
-  display: block;
-  text-align: center;
-  border: 3px solid;
-  text-transform: uppercase;
 }
 
 .latest {
@@ -504,10 +489,37 @@ body {
   text-align: center;
   color: #444;
   font-size: 1.5em;
+  width: 100%;
 }
 
-.btn-small {
-  font-size: 1.5rem;
+#contact {
+  height: 60vh;
+  text-align: center;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.8))), url("../images/svg/contact.svg");
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../images/svg/contact.svg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 20px;
+  background-position: center;
+  color: white;
+}
+
+#contact h1 {
+  font-size: 3em;
+}
+
+#contact span {
+  font-size: 2em;
+}
+
+#contact a {
+  margin-top: 4em;
+}
+
+@media (min-width: 840px) {
+  #contact a {
+    margin-top: 6em;
+  }
 }
 
 .container {
@@ -545,5 +557,45 @@ footer .fab {
 
 .clearfix {
   clear: both;
+}
+
+.btn {
+  text-decoration: none;
+  color: inherit;
+  padding: 4px;
+  margin: 2px auto;
+  display: block;
+  text-align: center;
+  border: 3px solid;
+  text-transform: uppercase;
+  -webkit-transition: all 1000ms;
+  transition: all 1000ms;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+  -webkit-transition: all 1000ms;
+  transition: all 1000ms;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-green {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn-small {
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */
