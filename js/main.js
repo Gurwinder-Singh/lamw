@@ -31,12 +31,7 @@ sr.reveal('.show-work', {
     distance: '300px'
 });
 
-function toggleMenu(x) {
-    x.classList.toggle("change");
-    menu = document.getElementsByClassName("menu");
-    menu[0].classList.toggle("menu_visible");
-    // menu[0].style.display = menu[0].style.display == "block" ? "none":"block";
-}
+
 // Get the navbar
 var main = document.getElementById("main");
 var navbar = document.getElementById("navbar");

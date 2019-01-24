@@ -1,0 +1,142 @@
+@import './params.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body,
+  html {
+    height: 100%;
+    width: 100%;
+  }
+
+  body {
+    background: color(bg);
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    color: color(text-color);
+  }
+.preloader{
+    position: fixed;
+    top:0px;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: 999999;
+    background:url('../images/monkey-1.gif') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    color: #000;
+    z-index: 999;
+
+    @include desktop {
+      border-bottom: 1px solid rgba(0,0,0,0.3);
+
+    }
+    .menu_icon {
+      float: right;
+      cursor: pointer;
+      .bar1,
+      .bar2,
+      .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #000;
+        margin: 8px 0;
+        transition: 0.4s;
+      }
+      @include desktop {
+        display: none;
+      }
+    }
+    .change {
+      .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+      }
+      .bar2 {
+        opacity: 0;
+      }
+      .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+      }
+    }
+    .logo {
+      font-size: 1.5em;
+      text-align: left;
+      padding:10px;
+      float: left;
+    }
+    .menu{
+      display: none;
+      @include desktop {
+        display: block;
+        padding-right: 4em;
+      }
+      
+    }
+    .menu_visible{
+      display: block;
+      margin-top: 40px;
+      animation: menu_show 1s forwards 0s ease;
+    }
+
+    @keyframes menu_show {
+      0% {
+        transform: rotate(0) translateY(-15%);
+        opacity: 0;
+     
+      }
+      // 25%{
+      //   height: 50px;
+      // }
+      // 50%{
+      //   height: 100px;
+      // }
+      // 75%{
+      //   height: 150px;
+      // }
+      100% {
+        transform: rotate(0) translateY(0);
+        opacity: 1;
+        height: auto;
+      }
+    }
+    ul {
+      @include desktop {
+        float: right;
+
+        
+      }
+      li {
+        @include desktop {
+          float: left;
+          box-sizing: border-box;
+          .active{
+            border-bottom: 2px solid #000;
+          }
+        }
+        padding: 1em;
+        text-transform: uppercase;
+        list-style-type: none;
+        text-align: center;
+        a {
+          text-decoration: none;
+          color: inherit;
+          @include desktop {
+            display: block;
+            padding: 2px 20px;
+          }
+        }
+      }
+    }
+  }

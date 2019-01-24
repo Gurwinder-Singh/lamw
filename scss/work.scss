@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300, 400, 700");
+// Variables
+$regal-blue: #034378;
+$san-juan: #2d4e68;
+$bermuda: #77d7b9;
+$white: #fff;
+$black: #000;
+$open-sans: "Open Sans", sans-serif;
+// clear-fix mixin
+@mixin cf {
+  &::before,
+  &::after {
+    content: "";
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+}
+
+.container {
+  padding-top: 70px;
+  margin: 0 2em;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $open-sans;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: $open-sans;
+  font-weight: 300;
+}
+
+.row{
+    display: flex;
+    // flex-direction: row;
+    flex-flow: row wrap;
+}
+.card {
+  width: 20%;
+  flex: 0 1 calc(20% - 8px);
+  padding: 0 1.7rem;
+  padding-bottom: 2em;
+
+  .wrapper {
+    background: url(../images/artwork1.jpeg) center / cover no-repeat;
+    border-radius: 3px;
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+    
+    box-shadow: 0 19px 38px rgba($black, 0.3), 0 15px 12px rgba($black, 0.2);
+
+    .header .date {
+      background: rgba($bermuda, 0.5);
+      position: absolute;
+      padding: 10px;
+    }
+
+    .content {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: $white;
+      .author{
+        padding-left: 1em;
+        font-size: 1.2em;
+      }
+      .data{
+          padding-left: 1em;
+      }
+      a {
+        display: block;
+
+        text-align: center;
+        position: relative;
+        padding-bottom: 1em;
+
+      }
+    }
+  }
+}
