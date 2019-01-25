@@ -12,6 +12,36 @@ body {
 
 a {
   text-decoration: none;
+  color: #03a87c;
+}
+
+.work-category {
+  text-align: center;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.btn-primary {
+  color: #03a87c;
+  border: 1px solid #03a87c;
+  border-radius: 4px;
+  padding: 5px 20px 5px 20px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 10px;
 }
 
 h1 {
@@ -30,49 +60,72 @@ h1 {
 }
 
 .card {
-  width: 20%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 22%;
-          flex: 1 1 22%;
-  padding: 0 1.7rem;
   padding-bottom: 2em;
 }
 
+@media (min-width: 840px) {
+  .card {
+    width: 25%;
+  }
+}
+
 .card .wrapper {
-  border-radius: 3px;
-  min-height: 500px;
+  border-radius: 9px;
   position: relative;
   overflow: hidden;
   -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
           box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
 }
 
-.card .wrapper .header .date {
+.card .wrapper img {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+@media (min-width: 840px) {
+  .card .wrapper {
+    width: 90%;
+    max-width: 270px;
+    max-height: 90%;
+  }
+}
+
+.card .header .date {
   background: rgba(119, 215, 185, 0.5);
   position: absolute;
+  color: #fff;
+  top: 0px;
   padding: 10px;
 }
 
-.card .wrapper .content {
+.card .content {
   position: absolute;
   bottom: 0;
   width: 100%;
   background: #fff;
+  padding-top: 5px;
 }
 
-.card .wrapper .content .author {
+.card .content .author {
   padding-left: 1em;
   font-size: 1.2em;
 }
 
-.card .wrapper .content .data {
+.card .content .data {
   padding-left: 1em;
 }
 
-.card .wrapper .content a {
+.card .content .link {
   display: block;
+  height: 10px;
   text-align: center;
   position: relative;
-  padding-bottom: 1em;
+  padding: 0.8em;
+}
+
+.card .content .link a {
+  border: 1px solid #03a87c;
+  padding: 2px 20px 2px 20px;
+  border-radius: 4px;
 }
 /*# sourceMappingURL=work.css.map */

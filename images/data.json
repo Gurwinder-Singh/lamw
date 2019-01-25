@@ -1,0 +1,74 @@
+{
+    "home":[
+        {
+            "img": "images/artwork1.jpeg",
+            "author": "Artwork"
+        },
+        {
+            "img": "images/artwork2.jpeg",
+            "author": "Artwork 2"
+        },
+        {
+            "img": "images/artwork3.jpeg",
+            "author": "Artwork 2"
+        },
+        {
+            "img": "images/artwork4.jpeg",
+            "author": "Artwork 2"
+        }, {
+            "img":"images/artwork5.jpeg",
+            "author":"Artwork 2"
+        }
+    ],
+    "work": [
+        {
+            "art":[
+                {
+                    "img": "images/artwork1.jpeg",
+                    "author": "Artwork",
+                    "data": "this is artwork",
+                    "time": "12-07-2018",
+                    "link": "#",
+                    "link_text": "visit"
+                },
+                {
+                    "img": "images/artwork2.jpeg",
+                    "author": "Artwork 2",
+                    "data": "this is artwork",
+                    "time": "12-07-2018"
+                },
+                {
+                    "img": "images/artwork3.jpeg",
+                    "author": "Artwork 2",
+                    "data": "this is artwork",
+                    "time": "12-07-2018",
+                    "link": "#",
+                    "link_text": "visit"
+                },
+                {
+                    "img": "images/artwork4.jpeg",
+                    "author": "Artwork 2",
+                    "data": "this is artwork",
+                    "time": "12-07-2018",
+                    "link": "#",
+                    "link_text": "visit"
+                }, {
+                    "img":"images/artwork5.jpeg",
+                    "author":"Artwork 2",
+                    "data":"this is artwork",
+                    "time":"12-07-2018"
+                }
+            ],
+            "cover":[
+                {
+                    "img": "images/coverart.jpeg",
+                    "author": "Artwork 2",
+                    "data": "this is artwork",
+                    "time": "12-07-2018",
+                    "link": "#",
+                    "link_text": "visit"
+                }
+            ]
+        }
+    ]
+}

@@ -1,10 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300, 400, 700");
+@import './params.scss';
 // Variables
-$regal-blue: #034378;
-$san-juan: #2d4e68;
-$bermuda: #77d7b9;
-$white: #fff;
-$black: #000;
+
 $open-sans: "Open Sans", sans-serif;
 // clear-fix mixin
 @mixin cf {
@@ -31,6 +28,28 @@ body {
 
 a {
   text-decoration: none;
+  color: color(btn-primary);
+}
+
+.work-category{
+  text-align: center;
+}
+
+.fixed{
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.btn-primary{
+  color: color(btn-primary);
+  border: 1px solid color(btn-primary);
+  border-radius: 4px;
+  padding: 5px 20px 5px 20px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 10px;
 }
 
 h1 {
@@ -44,23 +63,34 @@ h1 {
     flex-flow: row wrap;
 }
 .card {
-  width: 20%;
-  flex: 1 1 22%;
-  padding: 0 1.7rem;
-  padding-bottom: 2em;
 
+  @include desktop{
+    width: 25%;
+  }
+  padding-bottom: 2em;
+  
   .wrapper {
-    // background: url(../images/artwork1.jpeg) center / cover no-repeat;
-    border-radius: 3px;
-    min-height: 500px;
+    img{
+      width: 100%;
+      margin-bottom: 80px;
+    }
+    border-radius: 9px;
+
+  @include desktop{
+    width: 90%;
+    max-width: 270px;
+    max-height: 90%;
+  }
     position: relative;
     overflow: hidden;
     
-    box-shadow: 0 19px 38px rgba($black, 0.3), 0 15px 12px rgba($black, 0.2);
-
+    box-shadow: 0 19px 38px rgba( color(black), 0.3), 0 15px 12px rgba( color(black), 0.2);
+  }
     .header .date {
-      background: rgba($bermuda, 0.5);
+      background: rgba( color(bermuda), 0.5);
       position: absolute;
+      color:  color(white);
+      top:0px;
       padding: 10px;
     }
 
@@ -68,7 +98,8 @@ h1 {
       position: absolute;
       bottom: 0;
       width: 100%;
-      background: $white;
+      background:  color(white);
+      padding-top: 5px;
       .author{
         padding-left: 1em;
         font-size: 1.2em;
@@ -76,14 +107,18 @@ h1 {
       .data{
           padding-left: 1em;
       }
-      a {
+      .link {
         display: block;
-
+        height: 10px;
         text-align: center;
         position: relative;
-        padding-bottom: 1em;
-
+        padding: 0.8em;
+        a{
+          border: 1px solid color(btn-primary);
+          padding:2px 20px 2px 20px;
+          border-radius: 4px;
+        }
       }
     }
-  }
+  
 }
