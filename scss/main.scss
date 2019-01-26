@@ -63,8 +63,8 @@
     h1 {
       color: white;
       // font-family: 50 50px/1.5, 'Pacifico', Helvetica, sans-serif;
-      font-family: "Pacifico", cursive;
-      // font-family: "Cormorant Garamond", serif;
+      // font-family: "Pacifico", cursive;
+      font-family: "Cormorant Garamond", serif;
       // font-family: Dosis, arial, sans-serif;
       font-size: 3rem;
       text-transform: uppercase;
@@ -235,6 +235,7 @@
     @include desktop {
       display: flex;
       flex-direction: row;
+      justify-content: center;
     }
     .card {
       box-sizing: border-box;
@@ -311,9 +312,10 @@
   background-position: center;
   color: white;
   h1 {
-    font-size: 3em;
+    font-size: 1.5em;
     @include desktop {
       margin-top: 1em;
+      font-size: 3em;
     }
     margin-bottom: 1em;
   }

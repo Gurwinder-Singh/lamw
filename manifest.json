@@ -1,0 +1,9 @@
+{
+    "name": "Lab Art Media Works",
+    "short_name": "Lab Art",
+    "theme_color": "#444444",
+    "background_color": "#f1f1fa",
+    "display": "browser",
+    "scope": "/",
+    "start_url": "/"
+  }

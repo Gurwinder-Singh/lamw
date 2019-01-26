@@ -53,20 +53,43 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
 }
 
-.card {
-  padding-bottom: 2em;
+@-webkit-keyframes boom {
+  0% {
+    -webkit-transform: scale(0.75) translateY(3.2rem);
+            transform: scale(0.75) translateY(3.2rem);
+    opacity: 0.3;
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
 }
 
-@media (min-width: 840px) {
-  .card {
-    width: 25%;
+@keyframes boom {
+  0% {
+    -webkit-transform: scale(0.75) translateY(3.2rem);
+            transform: scale(0.75) translateY(3.2rem);
+    opacity: 0.3;
   }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+}
+
+.card {
+  padding-bottom: 2em;
 }
 
 .card .wrapper {
@@ -91,9 +114,9 @@ h1 {
 }
 
 .card .header .date {
-  background: rgba(119, 215, 185, 0.5);
+  background: rgba(119, 215, 185, 0.7);
   position: absolute;
-  color: #fff;
+  color: #000;
   top: 0px;
   padding: 10px;
 }
@@ -121,11 +144,33 @@ h1 {
   text-align: center;
   position: relative;
   padding: 0.8em;
+  margin-bottom: 0.5em;
 }
 
 .card .content .link a {
   border: 1px solid #03a87c;
   padding: 2px 20px 2px 20px;
   border-radius: 4px;
+}
+
+.cover {
+  margin: 0 20px 0 20px;
+  margin-bottom: 80px;
+  border-radius: 9px;
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cover .wrapper .content {
+  margin: 10px;
+}
+
+.cover .wrapper .content .author {
+  padding-left: 1em;
+  font-size: 1.2em;
+}
+
+.cover .wrapper .content .data {
+  padding-left: 1em;
 }
 /*# sourceMappingURL=work.css.map */
